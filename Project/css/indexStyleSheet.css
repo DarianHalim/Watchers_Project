@@ -1,0 +1,224 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    align-items: center;
+    position: absolute;
+}
+
+.navbarSpanHeader {
+    font-size: 2rem;
+    color: rgba(0, 163, 255, 1);
+
+}
+
+.navbarSpan {
+    padding-left: 1rem;
+}
+
+.navbarSpan:hover {
+    color: rgba(0, 163, 255, 1);
+}
+
+.navbarSearch {
+    padding-right: 1rem;
+    align-items: center;
+}
+
+.navbarSearchBar {
+    border-radius: 2rem;
+    width: 23rem;
+    border: 0.2rem;
+    border-style: solid;
+    border-color: rgba(0, 163, 255, 1);
+    background-color: transparent;
+    outline: 0px;
+    color: white;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbarsearchButton {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 0px;
+    font-weight: bold;
+    color: rgba(0, 163, 255, 1);
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 5.5rem;
+}
+
+.navbarsearchButton:active {
+    color: white;
+    background-color: rgba(0, 163, 255, 1);
+
+}
+
+
+.bannerContainer {
+    height: 40rem;
+
+}
+
+
+.bannerimgContainer {
+    height: 100%;
+
+
+}
+
+.bannerImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bannerbuttonContainer {
+    display: flex;
+    flex-direction: row;
+    top: 94%;
+    left: 40%;
+    position: absolute;
+    gap: 1rem;
+}
+
+.bannerButton:hover {
+    background-color: rgba(0, 163, 255, 1);
+}
+
+.bannerButton:active {
+    background-color: white;
+    border-color: rgba(0, 163, 255, 1);
+}
+
+.bannerButton {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgba(30, 139, 191, 0.5);
+    border: 0.3em;
+    border-color: white;
+    border-style: solid;
+    border-radius: 100rem;
+}
+
+
+.moviesContainer {
+    height: 28rem;
+}
+
+
+.movieHeader {
+    color: rgba(0, 163, 255, 1);
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+
+.movieRow {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    overflow: auto;
+    overscroll-behavior-inline: contain;
+}
+
+
+
+.movies {
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 0.5rem;
+    height: 20rem;
+}
+
+.movies:hover{
+    border-color: rgba(0, 163, 255, 1);
+    border-radius: 2rem;
+}
+
+
+
+.showsContainer {
+
+    height: 28rem;
+}
+
+.showHeader {
+    color: rgba(0, 163, 255, 1);
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+
+.showRow {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+}
+
+.shows {
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 0.4rem;
+    height: 20rem;
+}
+
+.shows:hover{
+    border-color: rgba(0, 163, 255, 1);
+    border-radius: 2rem;
+}
+
+
+.newContainer {
+    background-color: aquamarine;
+    height: 28rem;
+}
+
+
+
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 163, 255, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white
+}
+
+::-webkit-scrollbar-track {
+    background: transparent
+}
+
+
