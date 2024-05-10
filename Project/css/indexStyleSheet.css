@@ -143,10 +143,9 @@ body {
     padding-bottom: 1rem;
     display: grid;
     grid-auto-flow: column;
-    overflow: auto;
-    overscroll-behavior-inline: contain;
-}
+    overflow: hidden;
 
+}
 
 
 .movies {
@@ -154,11 +153,17 @@ body {
     border-style: solid;
     border-radius: 0.5rem;
     height: 20rem;
+    -webkit-user-drag: none;
 }
 
 .movies:hover{
     border-color: rgba(0, 163, 255, 1);
     border-radius: 2rem;
+}
+
+
+.movieRow::-webkit-scrollbar{
+    width: 0;
 }
 
 
@@ -220,5 +225,19 @@ html::-webkit-scrollbar {
 ::-webkit-scrollbar-track {
     background: transparent
 }
+
+/* For FireFox Compatibility */
+@-moz-document url-prefix() {
+    .movies {
+      border-color: transparent;
+      border-style: solid;
+      border-radius: 0.5rem;
+      height: 20rem;
+      pointer-events: none;
+  }
+  }
+
+
+
 
 
