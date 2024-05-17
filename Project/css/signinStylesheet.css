@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: white;
+}
+
+.containerSignIn {
+
+    background-color: rgb(9, 26, 47);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.textInfo {
+    text-align: center;
+}
+
+.title {
+   
+    color: rgba(0, 163, 255, 1);
+}
+
+.signInBox {
+    background-color: rgb(9, 26, 47);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+label{
+    font-weight: bold;
+
+}
+
+.stringInput{
+    margin-bottom: 0.5rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    color: rgba(0, 163, 255, 1);
+    font-weight: bold;
+}
+.submitBtn{
+    margin-top: 1rem;
+    height: 3rem;
+    width: 12rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 163, 255, 1);
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.submitBtn:active{
+    background-color: white;
+    color: rgba(0, 163, 255, 1);
+}
+
+.newRow {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+   
+}
+
+.newContent {
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 0.5rem;
+    height: 20rem;
+    -webkit-user-drag: none;
+}
+

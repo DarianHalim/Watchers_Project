@@ -4,6 +4,13 @@ body {
     background-color: rgba(0, 0, 0, 0.47);
 }
 
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+ 
+ 
 .container {
     display: flex;
     flex-direction: column;
@@ -25,6 +32,7 @@ body {
     font-size: 1.5rem;
     align-items: center;
     position: absolute;
+    top: 0%;
 }
 
 .navbarSpanHeader {
@@ -42,13 +50,13 @@ body {
 }
 
 .navbarSearch {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
     align-items: center;
 }
 
 .navbarSearchBar {
     border-radius: 2rem;
-    width: 23rem;
+    width: 19rem;
     border: 0.2rem;
     border-style: solid;
     border-color: rgba(0, 163, 255, 1);
@@ -96,14 +104,16 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: relative;
 }
 
 .bannerbuttonContainer {
     display: flex;
     flex-direction: row;
-    top: 94%;
-    left: 40%;
+    justify-content: center;
     position: absolute;
+    top: 37rem;
+    left: 47%;
     gap: 1rem;
 }
 
@@ -162,7 +172,7 @@ body {
 }
 
 
-.movieRow::-webkit-scrollbar{
+.contentRow::-webkit-scrollbar{
     width: 0;
 }
 
@@ -184,16 +194,15 @@ body {
     padding-bottom: 1rem;
     display: grid;
     grid-auto-flow: column;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-
+    overflow: hidden;
 }
 
 .shows {
     border-color: transparent;
     border-style: solid;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
     height: 20rem;
+    -webkit-user-drag: none;
 }
 
 .shows:hover{
@@ -203,41 +212,35 @@ body {
 
 
 .newContainer {
-    background-color: aquamarine;
     height: 28rem;
+    margin-bottom: 1rem;
+}
+
+.NewHeader {
+    color: rgba(0, 163, 255, 1);
+    padding-left: 2rem;
+    font-size: 2rem;
 }
 
 
-
-
-html::-webkit-scrollbar {
-    width: 10px;
+.newRow {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    overflow: hidden;
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 163, 255, 1);
+.newContent {
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 0.5rem;
+    height: 20rem;
+    -webkit-user-drag: none;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: white
+.newContent:hover{
+    border-color: rgba(0, 163, 255, 1);
+    border-radius: 2rem;
 }
-
-::-webkit-scrollbar-track {
-    background: transparent
-}
-
-/* For FireFox Compatibility */
-@-moz-document url-prefix() {
-    .movies {
-      border-color: transparent;
-      border-style: solid;
-      border-radius: 0.5rem;
-      height: 20rem;
-      pointer-events: none;
-  }
-  }
-
-
-
 
 
