@@ -11,42 +11,61 @@
 
 <body>
 
-    <div class="inputBox">
-        <h1>Create Your Account Now</h1>
-        <h2>One Step Closer To Accessing Our Catalog</h2>
+    <form id="signUpForm">
 
-        <div class="inputRow">
-            <label for="Username">Create Username</label>
-            <input class="inputText" type="text" name="" id="Username">
+        <div class="inputBox">
+            <h1>Create Your Account Now</h1>
+            <h2>One Step Closer To Accessing Our Caatalog</h2>
+
+            <div class="inputRow">
+                <label for="username">Create Username</label>
+                <input class="inputText" type="text"  id="username">
+            </div>
+
+            <div class="inputRow">
+                <label for="email">Enter Email</label>
+                <input class="inputText" type="text" name="" id="email">
+            </div>
+
+            <div class="inputRow">
+                <label for="password">Create Password</label>
+                <input class="inputText" type="password" name="" id="password" >
+            </div>
+
+            <div class="inputRow">
+                <label for="confirmPassword">Confirm Password</label>
+                <input class="inputText" type="password" name="" id="confirmPassword">
+            </div>
+
+
+            <div class="inputRow">
+                <label for="paymentPlan"> Choose Payment Plan</label>
+                <select class="inputText" name="" id="paymentPlan" >
+
+                    <option value="">Select - Payment</option>
+                    <option value="low">Low-Tier</option>
+                    <option value="mid">Mid-Tier</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+
+            <div class="inputRow">
+                <button type="submit" class="inputButton" id="qrButton">Generate QR Code</button>
+            </div>
+
+
+            <div class="inputRow">
+                <h1>Payment QR Code</h1>
+                <h2 class="price"></h2>
+            </div>
+
         </div>
 
-        <div class="inputRow">
-            <label for="Password">Create Password</label>
-            <input class="inputText" type="password" name="" id="Password">
-        </div>
-
-        <div class="inputRow">
-            <label for="paymentPlan"> Choose Payment Plan</label>
-            <select class="inputText" name="" id="paymentPlan">
-
-                <option value="1">Low-Tier</option>
-                <option value="2">Mid-Tier</option>
-                <option value="3">Premium</option>
-            </select>
-        </div>
-
-        <div class="inputRow">
-            <input  class="inputButton" type="submit" value="Generate QR Code">
-        </div>
-        <div class="inputRow">
-            <h1>Payment QR Code</h1>
-            // generated with price according to combo box
-        </div>
-
-    </div>
+    </form>
 
 
 
+    <script src="../js/signUp.js"></script>
 </body>
 
 </html>
