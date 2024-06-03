@@ -16,22 +16,38 @@
     <div class="navbarLeftContainer">
         <div>
             <h1 class="navbarHeader">Watchers</h1>
-            <h3 class="navbarHeading">Account</h3>
-            <h3 class="navbarHeading">Plans & Pricing</h3>
-            <h3 class="navbarHeading">Compatible Devices</h3>
-            <h3 class="navbarHeading">Child Account</h3>
-            <h3 class="navbarHeading">About Us</h3>
-            <h3 class="navbarHeading">Contact Us</h3>
+
+            <a href="#accountContainer">
+                <h3 class="navbarHeading">Account</h3>
+            </a>
+
+            <a href="#pricingList">
+                <h3 class="navbarHeading">Plans & Pricing</h3>
+            </a>
+
+            <a href="#compatibleStuff">
+                <h3 class="navbarHeading">Compatible Devices</h3>
+            </a>
+
+            <a href="#familyAccount">
+                <h3 class="navbarHeading">Family Sharing</h3>
+            </a>
+
+            <a href="#about">
+                <h3 class="navbarHeading">About Us</h3>
+            </a>
+
+            <a href="#contact">
+                <h3 class="navbarHeading">Contact Us</h3>
+            </a>
+
         </div>
 
         <div class="backtoTopContainer">
             <h3> <strong>Back To Top</strong></h1>
-            <div class="backToTopImgContainer">
-                <a href=""><img class="backToTopImg" src="../assets/homeAssets/White_Arrow_Up.svg.png" alt=""></a>
-            </div>
-
-            
-
+                <div class="backToTopImgContainer">
+                    <a href=""><img class="backToTopImg" src="../assets/homeAssets/White_Arrow_Up.svg.png" alt=""></a>
+                </div>
         </div>
 
     </div>
@@ -43,7 +59,7 @@
         <div class="containerContent">
 
 
-            <div class="headerContainer">
+            <div class="headerContainer" id="accountContainer">
                 <h1>Wanna <strong>Watch</strong> Something?</h1>
                 <h2>You Just Found The <strong>Right Place</strong></h2>
                 <h3>With A <strong>HUGE</strong> Variety Of Shows and Movies</h3>
@@ -57,7 +73,7 @@
 
 
 
-            <div class="featuredContentContainer">
+            <div class="featuredContentContainer" id="featuredStuff">
                 <h1>Featured <strong>Content</strong> </h1>
                 <h2 class="colouredBlue"> Movies And Shows</h2>
 
@@ -82,12 +98,14 @@
                         <img class="featuredItem" src="../assets/LatestRow/Kung_fu_panda_poster1.jpg" alt="">
                     </div>
 
-
+                    <div class="featuredItemContainer">
+                        <img class="featuredItem" src="../assets/MovieRow/allquietmovierow.jpg" alt="">
+                    </div>
 
                 </div>
             </div>
 
-            <div class="plansAndPricingContainer">
+            <div class="plansAndPricingContainer" id="pricingList">
 
                 <h1 class="pnpListTitle">Plans an<strong>d Pricing</strong> </h1>
 
@@ -109,7 +127,7 @@
                     <div class="lowColumn">
                         <h4 class="pnpListHeader">Low-Tier</h4>
                         <h4 class="pnplistText">Rp 35.000</h4>
-                        <h4 class="pnplistText">Rp 144.000</h4>
+                        <h4 class="pnplistText">Rp 252.000</h4>
                         <h4 class="pnplistText">Yes</h4>
                         <h4 class="pnplistText">No</h4>
                         <h4 class="pnplistText">1</h4>
@@ -122,10 +140,10 @@
                     <div class="midColumn">
                         <h4 class="pnpListHeader">Mid-Tier</h4>
                         <h4 class="pnplistText">Rp 60.000</h4>
-                        <h4 class="pnplistText">Rp 144.000</h4>
+                        <h4 class="pnplistText">Rp 432.000</h4>
                         <h4 class="pnplistText">Yes</h4>
                         <h4 class="pnplistText">Yes</h4>
-                        <h4 class="pnplistText">5</h4>
+                        <h4 class="pnplistText">3</h4>
                         <h4 class="pnplistText">3</h4>
                         <h4 class="pnplistText">1080p</h4>
                         <h4 class="pnplistText">No</h4>
@@ -135,11 +153,11 @@
                     <div class="premiumColumn">
                         <h4 class="pnpListHeader">Premium</h4>
                         <h4 class="pnplistText">Rp 105.000</h4>
-                        <h4 class="pnplistText">Rp 144.000</h4>
+                        <h4 class="pnplistText">Rp 756.000</h4>
                         <h4 class="pnplistText">Yes</h4>
                         <h4 class="pnplistText">Yes</h4>
-                        <h4 class="pnplistText">7</h4>
-                        <h4 class="pnplistText">7</h4>
+                        <h4 class="pnplistText">4</h4>
+                        <h4 class="pnplistText">6</h4>
                         <h4 class="pnplistText">4k</h4>
                         <h4 class="pnplistText">No</h4>
                         <h4 class="pnplistText">4k</h4>
@@ -148,7 +166,7 @@
                 </div>
             </div>
 
-            <div class="compatibleDevicesContainer">
+            <div class="compatibleDevicesContainer" id="compatibleStuff">
                 <div class="compatibleDevicesHeaderContainer">
                     <h1>Compatible <strong>Devices</strong></h3>
                         <h4>We support A Wide Variety Of Devices </h4>
@@ -186,56 +204,28 @@
 
             </div>
 
-            <div class="childAccountContainer">
-                <div class="childAccountTableHeaderContainer">
-                    <h1>Child Account</h1>
-                    <h2>We provide parents with a way to ensure your child only access allowed content</h2>
-                    <h3>We do so by providing the following features</h3>
-                </div>
-
-                <div class="childAccountTableContainer">
-                    <table class="childAccountTable">
-                        <tr>
-                            <th>Features</th>
-                            <th>Child Account</th>
-                            <th>Regular Account</th>
-                        </tr>
-
-                        <tr>
-                            <td>Unrestricted Access</td>
-                            <td>Only Below +18</td>
-                            <td>No Restrictions</td>
-                        </tr>
-
-                        <tr>
-                            <td>Log in Account</td>
-                            <td>Require Parent input password</td>
-                            <td>No Restriction</td>
-                        </tr>
-
-                        <tr>
-                            <td>Devices</td>
-                            <td>Restricted By Parents</td>
-                            <td>No Restrictions</td>
-                        </tr>
-
-                    </table>
+            <div class="familyAccountContainer"  id="familyAccount">
+                <div class="familyAccountTableHeaderContainer">
+                    <h1>Family Sharing Account</h1>
+                    <h2>We provide families with a way to ensure Simultaneous log ins throughout multiple devices</h2>
+                    <h3>That way with your family members can log in on each of their own devices at the same time</h3>
+                    <h4>And Use Our Platform Simultaneously</h4>
 
                 </div>
 
-                <div class="childAccountImgContainer">
-                    <img class="childAccountImgContainer" src="../assets/homeAssets/childprotection.png" alt="">
+                <div class="familyAccountImgContainer">
+                    <img class="familyAccountImgContainer" src="../assets/homeAssets/childprotection.png" alt="">
                 </div>
             </div>
 
-            <div class="aboutUsContainer">
+            <div class="aboutUsContainer" id="about">
                 <h1>About Us</h1>
                 <h2>We are a company with a mission to provide movies and tv shows at an affordable price to reduce
                     piracy</h2>
                 <h3>And To Promote Local Indonesian Films</h3>
             </div>
 
-            <div class="contactUsContainer">
+            <div class="contactUsContainer" id="contact">
                 <h1>Click To Contact Us</h1>
                 <div class="contactInfo">
                     <div class="contactRow">

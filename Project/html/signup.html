@@ -10,60 +10,82 @@
 </head>
 
 <body>
+    <div class="signUpContainer">
+    
 
-    <form id="signUpForm">
 
-        <div class="inputBox">
-            <h1>Create Your Account Now</h1>
-            <h2>One Step Closer To Accessing Our Caatalog</h2>
+        <form id="signUpForm">
 
-            <div class="inputRow">
-                <label for="username">Create Username</label>
-                <input class="inputText" type="text"  id="username">
+
+            <div class="inputBox">
+                <div class="inputHeader">
+                    <h1>Create Your Account Now</h1>
+                    <h2 class="textHeader">One Step Closer To Accessing Our Catalog</h2>
+                    <h5 class="textHeader"><a href="../html/home.html">Home</a> / <a href="../html/signin.html">SignIn</a></h5>
+                </div>
+
+                <div class="inputRow">
+                    <label for="username">Create Username</label>
+                    <input class="inputText" type="text" id="username">
+                </div>
+
+                <div class="inputRow">
+                    <label for="email">Enter Email</label>
+                    <input class="inputText" type="text" name="" id="email">
+                </div>
+
+                <div class="inputRow">
+                    <label for="password">Create Password</label>
+                    <input class="inputText" type="password" name="" id="password">
+                </div>
+
+                <div class="inputRow">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input class="inputText" type="password" name="" id="confirmPassword">
+                </div>
+
+
+                <div class="inputRow">
+                    <label for="paymentPlan"> Choose Payment Plan</label>
+                    <select class="inputText" name="" id="paymentPlan">
+
+                        <option value="">Select - Payment</option>
+                        <option value="low">Low-Tier</option>
+                        <option value="mid">Mid-Tier</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+
+                <div class="inputRow">
+                    <label for="durationPlan"> Choose Duration</label>
+                    <select class="inputText" name="" id="durationPlan">
+
+                        <option value="">Select - Duration</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+
+                    </select>
+                </div>
+
+                <div class="backRow">
+                    <a href="./home.html"> <h4 class="backButton">Return Back To Home After Payment</h4> </a>  
+                    <button type="submit" class="inputButton" id="qrButton">Generate QR Code</button>
+                </div>
+    
+                <div class="inputRow">
+                    <h3>Payment QR Code</h3>
+                    <h2 class="price" id="priceQR"></h2>
+                </div>
             </div>
 
-            <div class="inputRow">
-                <label for="email">Enter Email</label>
-                <input class="inputText" type="text" name="" id="email">
-            </div>
-
-            <div class="inputRow">
-                <label for="password">Create Password</label>
-                <input class="inputText" type="password" name="" id="password" >
-            </div>
-
-            <div class="inputRow">
-                <label for="confirmPassword">Confirm Password</label>
-                <input class="inputText" type="password" name="" id="confirmPassword">
-            </div>
+                            
+          
 
 
-            <div class="inputRow">
-                <label for="paymentPlan"> Choose Payment Plan</label>
-                <select class="inputText" name="" id="paymentPlan" >
-
-                    <option value="">Select - Payment</option>
-                    <option value="low">Low-Tier</option>
-                    <option value="mid">Mid-Tier</option>
-                    <option value="premium">Premium</option>
-                </select>
-            </div>
-
-            <div class="inputRow">
-                <button type="submit" class="inputButton" id="qrButton">Generate QR Code</button>
-            </div>
+        </form>
 
 
-            <div class="inputRow">
-                <h1>Payment QR Code</h1>
-                <h2 class="price"></h2>
-            </div>
-
-        </div>
-
-    </form>
-
-
+    </div>
 
     <script src="../js/signUp.js"></script>
 </body>

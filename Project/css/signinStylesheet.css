@@ -39,6 +39,17 @@ label {
 
 }
 
+.signUpLink {
+    background-color: white;
+    color: rgba(0, 163, 255, 1);
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+.signUpLink:hover {
+    color: white;
+}
+
 label{
     font-weight: bold;
 

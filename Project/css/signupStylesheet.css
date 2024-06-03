@@ -1,8 +1,19 @@
 body {
-background-color: black;
+    background-color: black;
     display: flex;
     justify-content: center;
 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+
+    color: rgba(0, 163, 255, 1);
+    border-radius: 1rem;
 }
 
 h1,
@@ -19,32 +30,64 @@ label,
 
 label {
     font-weight: bold;
-}   
-
-.inputBox{
-   display: flex;
-   flex-direction: column;
-    justify-content: space-around;
-   background-color:  rgba(0, 163, 255, 1);
-   opacity: 95%;
-   border-radius: 2rem;
-   width: 30rem;
-   height: 45rem;
 }
 
-h1,h2{
+.signUpContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 163, 255, 1);
+    opacity: 95%;
+    border-radius: 2rem;
+    width: 30rem;
+    height: 45rem;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 163, 255, 1);
+    opacity: 95%;
+    border-radius: 2rem;
+    width: 30rem;
+    height: 45rem;
+}
+
+h1,
+h2 {
     text-align: center;
 }
 
-.inputRow{
+.inputRow {
     display: flex;
     flex-direction: column;
-    padding-top:  0.5rem;
+    padding-top: 0.5rem;
     align-items: center;
 
 }
 
-.inputText{
+
+.backRow {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    align-items: center;
+
+}
+
+.inputHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.textHeader {
+    margin-top: -1rem
+}
+
+.inputText {
     margin-top: 0.5rem;
     height: 2rem;
     width: 15rem;
@@ -55,28 +98,49 @@ h1,h2{
     border-style: none;
 }
 
-.inputButton{
+.inputButton {
     height: 2rem;
     width: 15rem;
     border-radius: 0.5rem;
     color: white;
-    background-color:  rgba(0, 163, 255, 1);
+    background-color: rgba(0, 163, 255, 1);
     border: 0px;
     border-style: none;
     font-weight: bold;
 }
 
-.inputButton:hover{
+.inputButton:hover {
     background-color: white;
     color: rgba(0, 163, 255, 1);
 }
 
-.inputButton:active{
+.inputButton:active {
     background-color: rgba(0, 163, 255, 1);
     color: rgba(0, 163, 255, 1);
 }
 
-select{
-    text-align: center;
+.backButton {
+    height: 2rem;
+    width: 17rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgba(0, 163, 255, 1);
+    border: 0px;
+    border-style: none;
+    font-weight: bold;
 }
 
+.backButton:hover {
+    background-color: white;
+    color: rgba(0, 163, 255, 1);
+}
+
+.backButton:active {
+    background-color: rgba(0, 163, 255, 1);
+    color: rgba(0, 163, 255, 1);
+}
+
+
+select {
+    text-align: center;
+}

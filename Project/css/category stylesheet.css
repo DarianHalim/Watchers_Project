@@ -1,0 +1,172 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+    overflow-x: hidden;
+}
+
+h1{
+    color: white;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+u{
+background-color: rgba(0, 163, 255, 1);
+color: white;
+border-radius: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-bottom: 0.5rem;
+padding-top: 0.5rem;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    align-items: center;
+    top: 0%;
+}
+
+.navbarSpanHeader {
+    font-size: 2rem;
+    color: rgba(0, 163, 255, 1);
+
+}
+
+.navbarSpan {
+    padding-left: 1rem;
+}
+
+.navbarSpan:hover {
+    color: rgba(0, 163, 255, 1);
+}
+
+.navbarSearch {
+    padding-right: 0.5rem;
+    align-items: center;
+}
+
+.navbarSearchBar {
+    border-radius: 2rem;
+    width: 19rem;
+    border: 0.2rem;
+    border-style: solid;
+    border-color: rgba(0, 163, 255, 1);
+    background-color: transparent;
+    outline: 0px;
+    color: white;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbarsearchButton {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 0px;
+    font-weight: bold;
+    color: rgba(0, 163, 255, 1);
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 5.5rem;
+}
+
+.navbarsearchButton:active {
+    color: white;
+    background-color: rgba(0, 163, 255, 1);
+
+}
+
+
+.genreContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+
+.searchCard{
+    display: flex;
+    background-color: rgba(0, 163, 255, 1);
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.genreHeader {
+    margin-right: 1rem;
+    padding-right: 1rem;
+}
+
+.genreRow{
+    color: white ;
+    text-align: center;
+}
+
+.categoryRow{
+    color: white ;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+span {
+    margin-right: 1rem;
+    font-weight: bold;
+    align-self: center;
+   
+}
+
+.mediaColumn {
+    display: flexbox;
+
+}
+
+.mediaRow {
+    padding-bottom: 1rem;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.media {
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 0.5rem;
+    height: 20rem;
+    width: 15rem;
+    -webkit-user-drag: none;
+    align-self: center;
+}
+
+.media:hover {
+    border-color: rgba(0, 163, 255, 1);
+    border-radius: 2rem;
+}

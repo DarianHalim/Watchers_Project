@@ -16,6 +16,8 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
 
     let paymentField = document.getElementById('paymentPlan')
 
+    let durationField = document.getElementById('durationPlan')
+
 
 
     //Sync Variable
@@ -25,11 +27,20 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
     let password = passwordField.value
     let confirmPassword = confirmPasswordField.value
     let paymentPlan = paymentField.value
+    let durationPlan = durationField.value
+
+
+    // Remove the old QR code if it exists
+    let oldQR = document.getElementById('qrCode');
+    if (oldQR) {
+        oldQR.remove();
+    }
+
 
     //Validations
     if (username.length < 5) {
         alert('Username must be at least 5 char long')
-        
+
         return
     }
 
@@ -48,26 +59,65 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
         return
     }
 
-    if (paymentPlan ==  '') {
+    if (paymentPlan == '') {
         alert('Please Select Payment Plan')
         return
     }
 
+    if (durationPlan == '') {
+        alert('Please Select Duration Plan')
+        return
+    }
+
+    if (durationPlan != '') {
+
+        const paymentMessages = document.getElementsByClassName('price');
+
+        for (let i = 0; i < paymentMessages.length; i++) {
+            if (paymentPlan === 'low' && durationPlan === 'monthly') {
+                paymentMessages[i].innerHTML = 'Rp 35.000';
+            } else if (paymentPlan === 'mid' && durationPlan === 'monthly') {
+                paymentMessages[i].innerHTML = 'Rp 60.000';
+            } else if (paymentPlan === 'premium' && durationPlan === 'monthly') {
+                paymentMessages[i].innerHTML = 'Rp 105.000';
+            } else if (paymentPlan === 'low' && durationPlan === 'yearly') {
+                paymentMessages[i].innerHTML = 'Rp 252.000';
+            } else if (paymentPlan === 'mid' && durationPlan === 'yearly') {
+                paymentMessages[i].innerHTML = 'Rp 432.000';
+            } else if (paymentPlan === 'premium' && durationPlan === 'yearly') {
+                paymentMessages[i].innerHTML = 'Rp 756.000';
+            }
+        }
+
+    }
+
 
     alert('Data Accepted Please Proceed To Payment')
-  
-    const paymentMessage = document.getElementsByClassName('price')
-    if (paymentPlan == 'low') {
-        paymentMessage.innerHTML = '45.000'
-    } else if (paymentPlan == 'mid') {
-        paymentMessage.innerHTML = '60.000'
-    } else {
-        paymentMessage.innerHTML = '100.000'
-    } {
-        
-    }
-    
-})
+
+
+
+
+
+    // Creation QR
+    let img = document.createElement('img');
+    img.src = '../assets/QRPA.jpg'; // Make sure imgQR points to the correct image URL
+    img.alt = 'QR Code';
+
+    //Styling
+    img.style.width = '20rem'
+    img.style.height = '20rem'
+
+    // Get the element a
+    let paymentQRHeading = document.querySelector('.signUpContainer .inputBox h3');
+
+    // Inserting the image 
+    paymentQRHeading.parentNode.insertBefore(img, paymentQRHeading.nextSibling);
+
+
+});
+
+
+
 
 
 

@@ -15,8 +15,8 @@
 
     <div class="container">
 
-        <div class="bannerContainer">
-
+       <div class="bannerContainer">
+ 
 
             <div class="bannerimgContainer">
                 <img class="bannerImg" src="../assets/hoteldelunabanner.jpg" alt="">
@@ -26,19 +26,21 @@
                 <div class="navbarText">
                     <span class="navbarSpanHeader">Watchers</span>
                     <a href="../html/home.html"><span class="navbarSpan">Home</span></a>
-                    <span class="navbarSpan">Movies</span>
-                    <span class="navbarSpan">Series</span>
-                    <span class="navbarSpan">Categories</span>
-                    <span class="navbarSpan">Settings</span>
+                    <a href="#movieRows"><span class="navbarSpan">Movies</span></a>
+                    <a href="#showRows"><span class="navbarSpan">Series</span></a>
+                    <a href="#newRows"> <span class="navbarSpan">Latest</span></a>
+                    <a href="./category.html"><span class="navbarSpan">Categories</span></a>
                 </div>
 
-                <div class="navbarSearch">
-                    <button class="navbarsearchButton">Search</button>
-                    <span class="navbarSpan">
-                        <input class="navbarSearchBar" type="text">
-                    </span>
-                </div>
-            </div>
+                <form action="">
+                    <div class="navbarSearch">
+                        <button class="navbarsearchButton" type="submit">Search</button>
+                        <span class="navbarSpan">
+                            <input class="navbarSearchBar" type="text" required>
+                        </span>
+                    </div>
+    
+                </form>
 
 
             <div class="bannerbuttonContainer">
@@ -48,7 +50,7 @@
             </div>
         </div>
 
-        <div class="moviesContainer">
+        <div class="moviesContainer"id="movieRows">
             <h1 class="movieHeader">Movies</h1>
 
             <div class="movieRow">
@@ -63,7 +65,7 @@
             </div>
         </div>
 
-        <div class="showsContainer">
+        <div class="showsContainer"  id="showRows">
 
             <h1 class="showHeader">Shows</h1>
 
@@ -81,11 +83,11 @@
             </div>
         </div>
 
-        <div class="newContainer">
+        <div class="newContainer" id="newRows">
 
             <h1 class="NewHeader">Latest Additions</h1>
 
-            <div class="newRow">
+            <div class="newRow" >
                 <img class="newContent" src="../assets/LatestRow/Kung_fu_panda_poster1.jpg" alt="">
                 <img class="newContent" src="../assets/LatestRow/Kung_Fu_Panda_2_Poster.jpg" alt="">
                 <img class="newContent" src="../assets/LatestRow/duneposter.jpg" alt="">
