@@ -1,7 +1,11 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.47);
+    background-color: black;
     overflow-x: hidden;
 }
 
@@ -15,6 +19,15 @@ a {
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
 
 u{
 background-color: rgba(0, 163, 255, 1);
@@ -67,6 +80,8 @@ padding-top: 0.5rem;
 .navbarSearch {
     padding-right: 0.5rem;
     align-items: center;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 .navbarSearchBar {
@@ -92,14 +107,21 @@ padding-top: 0.5rem;
     font-weight: bold;
     color: rgba(0, 163, 255, 1);
     border-radius: 2rem;
-    height: 2.5rem;
-    width: 5.5rem;
+    height: 2rem;
+    width:10rem;
+    text-align: center;
 }
 
 .navbarsearchButton:active {
     color: white;
     background-color: rgba(0, 163, 255, 1);
 
+}
+
+.catSearchContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
