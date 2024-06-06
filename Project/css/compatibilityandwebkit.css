@@ -1,41 +1,50 @@
 /* For FireFox Compatibility */
 @-moz-document url-prefix() {
     .movies {
-      border-color: transparent;
-      border-style: solid;
-      border-radius: 0.5rem;
-      height: 20rem;
-      pointer-events: none;
-  }
+        border-color: transparent;
+        border-style: solid;
+        border-radius: 0.5rem;
+        height: 20rem;
+        pointer-events: none;
+    }
 
-  .shows{
-    border-color: transparent;
-    border-style: solid;
-    border-radius: 0.5rem;
-    height: 20rem;
-    pointer-events: none;
-  }
+    .shows {
+        border-color: transparent;
+        border-style: solid;
+        border-radius: 0.5rem;
+        height: 20rem;
+        pointer-events: none;
+    }
 
-  }
+}
 
 
-  /* Customize Scrollbar For All Pages*/
-  html::-webkit-scrollbar {
+/* Customize Scrollbar For All Pages*/
+*::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background: rgba(0, 163, 255, 1);
 }
 
-::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
     background: white
 }
 
-::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: transparent
 }
 
 
 
+/* Mobile Compatible*/
+
+
+@media screen and (max-width: 412px){
+
+    body{
+        overflow-x: hidden;
+    }
+}

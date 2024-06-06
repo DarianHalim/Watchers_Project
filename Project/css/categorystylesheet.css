@@ -29,14 +29,12 @@ ul{
     font-weight: bold;
 }
 
-u{
-background-color: rgba(0, 163, 255, 1);
-color: white;
-border-radius: 1rem;
-padding-left: 1rem;
-padding-right: 1rem;
-padding-bottom: 0.5rem;
-padding-top: 0.5rem;
+li{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ margin-right: 1rem;
+ height: 100%;
 }
 
 
@@ -86,7 +84,7 @@ padding-top: 0.5rem;
 
 .navbarSearchBar {
     border-radius: 2rem;
-    width: 19rem;
+    width: 15rem;
     border: 0.2rem;
     border-style: solid;
     border-color: rgba(0, 163, 255, 1);
@@ -112,7 +110,7 @@ padding-top: 0.5rem;
     text-align: center;
 }
 
-.navbarsearchButton:active {
+.navbarsearchButton:hover {
     color: white;
     background-color: rgba(0, 163, 255, 1);
 
@@ -184,11 +182,37 @@ span {
     border-radius: 0.5rem;
     height: 20rem;
     width: 15rem;
-    -webkit-user-drag: none;
+    -webkituser-drag: none;
     align-self: center;
 }
 
 .media:hover {
     border-color: rgba(0, 163, 255, 1);
     border-radius: 2rem;
+}
+
+.mediaHeader{
+    text-wrap: nowrap;
+}
+
+
+.selectButton {
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+    background-color: rgba(0, 163, 255, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.selectButton:active {
+    background-color: white;
+    color: rgba(0, 163, 255, 1);
+
+}
+
+.selectButton:hover {
+    color: rgba(0, 163, 255, 1);
 }

@@ -1,16 +1,20 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background-color:black;
+    background-color: black;
 }
 
-  a{
+a {
     color: white;
     text-decoration: none;
-  }
+}
 
- 
- 
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -153,7 +157,7 @@ body {
     padding-bottom: 1rem;
     display: grid;
     grid-auto-flow: column;
-    overflow: hidden;
+    overflow: scroll;
 
 }
 
@@ -163,23 +167,23 @@ body {
     border-style: solid;
     border-radius: 0.5rem;
     height: 20rem;
+    width: 15rem;
     -webkit-user-drag: none;
 }
 
-.movies:hover{
+.movies:hover {
     border-color: rgba(0, 163, 255, 1);
     border-radius: 2rem;
 }
 
 
-.contentRow::-webkit-scrollbar{
+.contentRow::-webkit-scrollbar {
     width: 0;
 }
 
 
 
 .showsContainer {
-
     height: 28rem;
 }
 
@@ -194,7 +198,7 @@ body {
     padding-bottom: 1rem;
     display: grid;
     grid-auto-flow: column;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .shows {
@@ -202,11 +206,12 @@ body {
     border-style: solid;
     border-radius: 0.5rem;
     height: 20rem;
+    width: 15rem;
     -webkit-user-drag: none;
 }
 
-.shows:hover{
-    border-color: rgba(0, 163, 255, 1);
+.shows:hover {
+    border-color: white;
     border-radius: 2rem;
 }
 
@@ -227,7 +232,7 @@ body {
     padding-bottom: 1rem;
     display: grid;
     grid-auto-flow: column;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .newContent {
@@ -235,12 +240,40 @@ body {
     border-style: solid;
     border-radius: 0.5rem;
     height: 20rem;
+    width: 15rem;
     -webkit-user-drag: none;
 }
 
-.newContent:hover{
+.newContent:hover {
     border-color: rgba(0, 163, 255, 1);
     border-radius: 2rem;
 }
 
 
+.contentCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+
+.selectButton {
+    margin-top: 1rem;
+    background-color: rgba(0, 163, 255, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.selectButton:active {
+    background-color: white;
+    color: rgba(0, 163, 255, 1);
+
+}
+
+.selectButton:hover {
+    color: rgba(0, 163, 255, 1);
+}
