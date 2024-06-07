@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -100,8 +100,6 @@ a {
 
 .bannerimgContainer {
     height: 100%;
-
-
 }
 
 .bannerImg {
@@ -257,15 +255,16 @@ a {
     margin-right: 1rem;
 }
 
-
 .selectButton {
-    margin-top: 1rem;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
     background-color: rgba(0, 163, 255, 1);
     color: white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 0.5rem;
     text-align: center;
+    width: 100%;
 }
 
 .selectButton:active {
@@ -276,4 +275,105 @@ a {
 
 .selectButton:hover {
     color: rgba(0, 163, 255, 1);
+}
+
+.movieDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+}
+
+.movieDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.movieDialog>div {
+    margin-top: 1rem;
+    width: 60%;
+    height: 50%;
+    position: relative;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    background: black;
+    border: 0.3rem;
+    border-style: solid;
+    border-color: rgba(0, 163, 255, 1);
+}
+
+
+
+.exitDialog:hover {
+    background-color:rgba(0, 163, 255, 1);
+}
+
+.exitDialog {
+    background: black;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+    top: 88%;
+}
+
+
+.contentDialog{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+}
+
+.contentDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.contentDialog>div {
+    margin-top: 1rem;
+    width: 60%;
+    height: 70%;
+    position: relative;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    background:black;
+    border: 0.3rem;
+    border-style: solid;
+    border-color: rgba(0, 163, 255, 1);
+}
+
+
+.selectButton{
+    margin-top: 0.3rem;
+}
+
+.episode{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.epHeader{
+    text-align: center;
 }

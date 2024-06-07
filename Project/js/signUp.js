@@ -30,13 +30,6 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
     let durationPlan = durationField.value
 
 
-    // Remove the old QR code if it exists
-    let oldQR = document.getElementById('qrCode');
-    if (oldQR) {
-        oldQR.remove();
-    }
-
-
     //Validations
     if (username.length < 5) {
         alert('Username must be at least 5 char long')
@@ -97,6 +90,7 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
 
 
 
+    
 
     // Creation QR
     let img = document.createElement('img');
@@ -113,7 +107,19 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
     // Inserting the image 
     paymentQRHeading.parentNode.insertBefore(img, paymentQRHeading.nextSibling);
 
+    //Remove De QR
+    let oldQR = img;
+    if (img != null) {
+        oldQR.remove();
+    }
 
+
+    //Save local storage
+
+    localStorage.setItem('username',username);
+    localStorage.setItem('password',password);
+    localStorage.setItem("payment", paymentPlan);
+    localStorage.setItem("duration",durationPlan);
 });
 
 

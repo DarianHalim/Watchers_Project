@@ -1,5 +1,6 @@
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 body {
@@ -76,10 +77,13 @@ li{
 }
 
 .navbarSearch {
+    margin-top: 1rem;
     padding-right: 0.5rem;
     align-items: center;
     padding-left: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .navbarSearchBar {
@@ -116,6 +120,33 @@ li{
 
 }
 
+.inputText {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    border: 0px;
+    font-weight: bold;
+    color: rgba(0, 163, 255, 1);
+    border-radius: 2rem;
+    height: 2rem;
+    width:6rem;
+    text-align: center;
+}
+
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+.inputRow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+
 .catSearchContainer{
     display: flex;
     flex-direction: row;
@@ -123,47 +154,6 @@ li{
 }
 
 
-.genreContainer {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-}
-
-.searchCard{
-    display: flex;
-    background-color: rgba(0, 163, 255, 1);
-    padding-left: 1.5rem;
-    border-radius: 0.5rem;
-    align-items: center;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
-.genreHeader {
-    margin-right: 1rem;
-    padding-right: 1rem;
-}
-
-.genreRow{
-    color: white ;
-    text-align: center;
-}
-
-.categoryRow{
-    color: white ;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-span {
-    margin-right: 1rem;
-    font-weight: bold;
-    align-self: center;
-   
-}
 
 .mediaColumn {
     display: flexbox;
@@ -202,7 +192,7 @@ span {
     background-color: rgba(0, 163, 255, 1);
     color: white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 0.5rem;
     text-align: center;
 }
@@ -215,4 +205,59 @@ span {
 
 .selectButton:hover {
     color: rgba(0, 163, 255, 1);
+}
+
+.contentDialog{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+}
+
+.contentDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.contentDialog>div {
+    margin-top: 1rem;
+    width: 60%;
+    height: 40%;
+    position: relative;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    background:black;
+    border: 0.3rem;
+    border-style: solid;
+    border-color: rgba(0, 163, 255, 1);
+}
+
+
+
+.exitDialog:hover {
+    background-color:black;
+}
+
+.exitDialog {
+    background: rgba(0, 163, 255, 1);
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+.epHeader{
+    margin-top: 3rem;
 }
