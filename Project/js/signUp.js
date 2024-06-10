@@ -25,6 +25,7 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
     let username = usernameField.value
     let email = emailField.value
     let password = passwordField.value
+    
     let confirmPassword = confirmPasswordField.value
     let paymentPlan = paymentField.value
     let durationPlan = durationField.value
@@ -71,13 +72,16 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
                 paymentMessages[i].innerHTML = 'Rp 35.000';
             } else if (paymentPlan === 'mid' && durationPlan === 'monthly') {
                 paymentMessages[i].innerHTML = 'Rp 60.000';
+
             } else if (paymentPlan === 'premium' && durationPlan === 'monthly') {
                 paymentMessages[i].innerHTML = 'Rp 105.000';
+
             } else if (paymentPlan === 'low' && durationPlan === 'yearly') {
                 paymentMessages[i].innerHTML = 'Rp 252.000';
             } else if (paymentPlan === 'mid' && durationPlan === 'yearly') {
                 paymentMessages[i].innerHTML = 'Rp 432.000';
             } else if (paymentPlan === 'premium' && durationPlan === 'yearly') {
+
                 paymentMessages[i].innerHTML = 'Rp 756.000';
             }
         }
@@ -88,31 +92,12 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
     alert('Data Accepted Please Proceed To Payment')
 
 
-
-
-    
-
-    // Creation QR
-    let img = document.createElement('img');
-    img.src = '../assets/QRPA.jpg'; // Make sure imgQR points to the correct image URL
-    img.alt = 'QR Code';
-
     //Styling
     img.style.width = '20rem'
     img.style.height = '20rem'
 
     // Get the element a
     let paymentQRHeading = document.querySelector('.signUpContainer .inputBox h3');
-
-    // Inserting the image 
-    paymentQRHeading.parentNode.insertBefore(img, paymentQRHeading.nextSibling);
-
-    //Remove De QR
-    let oldQR = img;
-    if (img != null) {
-        oldQR.remove();
-    }
-
 
     //Save local storage
 

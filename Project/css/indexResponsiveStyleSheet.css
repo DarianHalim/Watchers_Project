@@ -1,0 +1,27 @@
+@media screen and (max-width: 412px){
+
+   .pnpListHeader{
+    font-size: 80%;
+   }
+
+
+   .buttonRow {
+  width: 20%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.signButton {
+    border-radius: 3rem;
+    height: 100%;
+    width: 150%;
+    background-color: rgba(0, 163, 255, 1);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+
+}
+
+
+}

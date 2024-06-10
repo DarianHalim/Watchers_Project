@@ -1,29 +1,24 @@
-//IMG SWITCH
-document.addEventListener('DOMContentLoaded', (f) => {
-    const bannerImage = document.querySelectorAll('.bannerImg')
 
-    const otherImage = document.querySelector('.large')
+let bannerImages = document.querySelectorAll('.bannerImg');
+let bannerButtons = document.querySelectorAll('.bannerButton');
 
-    bannerImage.forEach(img => {
-        img.addEventListener('click', (event) => {
-            largeImage.src = event.target.src
-        })
-    })
+// Hide the banners in beginning
+bannerImages.forEach((img, index) => {
+    if (index !== 0) {
+        
+        img.style.display = 'none';
+    }
 
-})
-
+});
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Loop banner each time event listener active
+bannerButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      //Hide the image
+        bannerImages.forEach(img => img.style.display = 'none');
+        //show the image that is selected
+        bannerImages[index].style.display = 'block';
+    });
+});

@@ -36,6 +36,11 @@ label {
     font-weight: bold;
 }
 
+.formRow{
+    display: flex;
+    flex-direction: row;
+}
+
 .signUpContainer {
     display: flex;
     flex-direction: column;
@@ -148,4 +153,16 @@ h2 {
 
 select {
     text-align: center;
+}
+
+img{
+    height: auto;
+    width: 30%;
+}
+
+.QRColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }

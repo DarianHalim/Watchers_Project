@@ -4,1173 +4,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Home</title>
 
     <link rel="stylesheet" href="../css/indexStyleSheet.css">
 
     <link rel="stylesheet" href="../css/compatibilityandwebkit.css">
+
+    <link rel="stylesheet" href="../css/indexResponsiveStyleSheet.css">
 </head>
 
 <body>
 
+    <div class="navbarLeftContainer">
+        <div>
+            <h1 class="navbarHeader">Watchers</h1>
+
+            <a href="#accountContainer">
+                <h3 class="navbarHeading">Account</h3>
+            </a>
+
+            <a href="#pricingList">
+                <h3 class="navbarHeading">Plans & Pricing</h3>
+            </a>
+
+            <a href="#compatibleStuff">
+                <h3 class="navbarHeading">Compatible Devices</h3>
+            </a>
+
+            <a href="#familyAccount">
+                <h3 class="navbarHeading">Family Sharing</h3>
+            </a>
+
+            <a href="#about">
+                <h3 class="navbarHeading">About Us</h3>
+            </a>
+
+            <a href="#contact">
+                <h3 class="navbarHeading">Contact Us</h3>
+            </a>
+
+        </div>
+
+        <div class="backtoTopContainer">
+            <h3> <strong>Back To Top</strong></h1>
+                <div class="backToTopImgContainer">
+                    <a href=""><img class="backToTopImg" src="../assets/homeAssets/White_Arrow_Up.svg.png" alt=""></a>
+                </div>
+        </div>
+
+    </div>
+
     <div class="container">
 
-        <div class="bannerContainer">
 
 
-            <div class="bannerimgContainer">
-                <img class="bannerImg" src="../assets/hoteldelunabanner.jpg" alt="">
-                <a class="bannerImg"
-                    href="https://www.telkomsel.com/sites/default/files/inline-images/Banner%20Cek%20Toko%20Sebelah.jpg"></a>
+        <div class="containerContent">
+
+
+            <div class="headerContainer" id="accountContainer">
+                <div>
+                    <h1>Wanna <strong>Watch</strong> Something?</h1>
+                    <h2>You Just Found The <strong>Right Place</strong></h2>
+                    <h3>With A <strong>HUGE</strong> Variety Of Shows and Movies</h3>
+                </div>
+           
+                <div class="buttonRow">
+                    <a href="../html/signin.html"><button class="signButton">Sign In</button></a>
+                    <a href="../html/signup.html"><button class="signButton">Sign Up</button></a>
+                </div>
+
             </div>
 
-            <div class="navbar">
-                <div class="navbarText">
-                    <span class="navbarSpanHeader">Watchers</span>
-                    <a href="../html/index.html"><span class="navbarSpan">Home</span></a>
-                    <a href="#movieRows"><span class="navbarSpan">Movies</span></a>
-                    <a href="#showRows"><span class="navbarSpan">Series</span></a>
-                    <a href="#newRows"> <span class="navbarSpan">Latest</span></a>
-                    <a href="./home.html"><span class="navbarSpan">Log Out</span></a>
-                </div>
 
-                <div class="navbarSearch">
-                    <a href="../html/category.html"><button class="navbarsearchButton" type="submit">Search</button></a>
-                </div>
 
-                <div class="bannerbuttonContainer">
-                    <button class="bannerButton" id="bannerButton1"></button>
-                    <button class="bannerButton" id="bannerButton2"></button>
-                    <button class="bannerButton" id="bannerButton3"></button>
-                </div>
-            </div>
+            <div class="featuredContentContainer" id="featuredStuff">
+                <h1>Featured <strong>Content</strong> </h1>
+                <h2 class="colouredBlue"> Movies And Shows</h2>
 
-            <div class="moviesContainer" id="movieRows">
-                <h1 class="movieHeader">Movies</h1>
-
-                <div class="movieRow">
-                    <div class="contentCard">
-                        <img class="movies" src="../assets/MovieRow/allquietmovierow.jpg" alt="">
-                        <a href="#allquietwesternfrontDialog"> <a href="#allquietwesternfrontDialog"> <button
-                                    class="selectButton">Watch</button></a></a>
+                <div class="featuredRow">
+                    <div class="featuredItemContainer">
+                        <img class="featuredItem" src="https://cdn1-production-images-kly.akamaized.net/GhuAiCKocGwPNLPnPem9zVCyJWI=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3252536/original/028785400_1601367858-Cek_Toko_Sebelah_Premier.jpg" alt="">
                     </div>
 
-                    <div class="contentCard">
-                        <img class="movies" src="../assets/MovieRow/TrainToBusanMovieRow.jpg" alt="">
-                        <a href="#traintobusanDialog"> <button class="selectButton">Watch</button></a>
+                    <div class="featuredItemContainer">
+                        <img class="featuredItem" src="https://m.media-amazon.com/images/M/MV5BZjljM2M1ZTgtZGM4My00OGRkLTliMjAtYzJiZDBkMzQ5ZDkzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="">
                     </div>
 
-                    <div class="contentCard">
-                        <img class="movies" src="../assets/MovieRow/Cek_Toko_Sebelah.jpg" alt="">
-                        <a href="#cektokosebelahDialog"> <button class="selectButton">Watch</button></a>
+                    <div class="featuredItemContainer">
+                        <img class="featuredItem" src="https://image.tmdb.org/t/p/original/d4B8glaJVUvi0sEs9ItsmNSP45L.jpg" alt="">
                     </div>
 
-                    <div class="contentCard">
-                        <img class="movies" src="../assets/MovieRow/violeteveragrdenmoverow.jpg" alt="">
-                        <a href="#violeteveragrdenDialog"> <button class="selectButton">Watch</button></a>
+                    <div class="featuredItemContainer">
+                        <img class="featuredItem" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpJ8b6MU15I_LuexmiO_9vjejR1LjzkqaXq1UOQgCHhBb5VbAq" alt="">
                     </div>
 
-                    <div class="contentCard">
-                        <img class="movies" src="../assets/MovieRow/missionimposble movie row.jpg" alt="">
-                        <a href="#missionimposbleDialog"> <button class="selectButton">Watch</button></a>
+                    <div class="featuredItemContainer">
+                        <img class="featuredItem" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvEsEzAIpF_qgBa5CpOcnuO6Dt2nZ13Hc92txg7mOGRWp85861" alt="">
                     </div>
 
-                    <div class="contentCard">
-                        <img class="movies" src="../assets/MovieRow/TopGunMovieRow.jpg" alt="">
-                        <a href="#topgunmaverickDialog"> <button class="selectButton">Watch</button></a>
+                    <div class="featuredItemContainer">
+                        <img class="featuredItem" src="https://i.pinimg.com/originals/c4/b7/36/c4b736cbbc8caea7179a513ca9dd717b.jpg"  alt="">
                     </div>
 
-                    <div class="contentCard">
-                        <img class="movies" src="../assets/MovieRow/skiptracerow.jpg" alt="">
-                        <a href="#skiptraceDialog"> <button class="selectButton">Watch</button></a>
+                    <div class="featuredItemContainer">
+                        <img class="featuredItem" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrurPMaPrRDau9k9O7OK6rNqoz65365rwWf_XraWPKSoWX5bIL" alt="">
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="plansAndPricingContainer" id="pricingList">
+
+                <h1 class="pnpListTitle">Plans an<strong>d Pricing</strong> </h1>
+
+                <div class="pnpList">
+
+                    <div class="featureColumn">
+                        <h4 class="pnpListHeader">Features</h4>
+                        <h4 class="pnplistText">Pay Monthly</h4>
+                        <h4 class="pnplistText">Pay Annually (Save 40%)</h4>
+                        <h4 class="pnplistText">Watch All Content</h4>
+                        <h4 class="pnplistText">Multiple Device</h4>
+                        <h4 class="pnplistText">Profile Amount</h4>
+                        <h4 class="pnplistText">Max Log Ins Across Devices</h4>
+                        <h4 class="pnplistText">Max Video Quality </h4>
+                        <h4 class="pnplistText">Ads</h4>
+
                     </div>
 
-                    <div class="contentCard">
-                        <img class="movies" src="../assets/MovieRow/walrus.jpeg" alt="">
-                        <a href="#walrusDialog"> <button class="selectButton">Watch</button></a>
+                    <div class="lowColumn">
+                        <h4 class="pnpListHeader">Low-Tier</h4>
+                        <h4 class="pnplistText">Rp 35.000</h4>
+                        <h4 class="pnplistText">Rp 252.000</h4>
+                        <h4 class="pnplistText">Yes</h4>
+                        <h4 class="pnplistText">No</h4>
+                        <h4 class="pnplistText">4</h4>
+                        <h4 class="pnplistText">1</h4>
+                        <h4 class="pnplistText">720p</h4>
+                        <h4 class="pnplistText">Yes</h4>
                     </div>
 
-                </div>
-            </div>
-
-            <div class="showsContainer" id="showRows">
-
-                <h1 class="showHeader">Shows</h1>
-
-                <div class="showRow">
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/A-Business-Proposal1.jpeg" alt="">
-                        <a href="#businessproposalDialog"> <button class="selectButton">Watch</button></a>
+                    <div class="midColumn">
+                        <h4 class="pnpListHeader">Mid-Tier</h4>
+                        <h4 class="pnplistText">Rp 60.000</h4>
+                        <h4 class="pnplistText">Rp 432.000</h4>
+                        <h4 class="pnplistText">Yes</h4>
+                        <h4 class="pnplistText">Yes</h4>
+                        <h4 class="pnplistText">4</h4>
+                        <h4 class="pnplistText">4</h4>
+                        <h4 class="pnplistText">1080p</h4>
+                        <h4 class="pnplistText">No</h4>
                     </div>
 
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/hoteldeluna.jpg" alt="">
-                        <a href="#hoteldelunaDialog"> <button class="selectButton">Watch</button></a>
-                    </div>
-
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/nuggetrow.jpg" alt="">
-                        <a href="#chickennuggetDialog"> <button class="selectButton">Watch</button></a>
-                    </div>
-
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/peakblindersrow.jpg" alt="">
-                        <a href="#peakyblindersDialog"> <button class="selectButton">Watch</button></a>
-                    </div>
-
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/boardwalkempirerow.jpg" alt="">
-                        <a href="#boardwalkempireDialog"> <button class="selectButton">Watch</button></a>
-                    </div>
-
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/itsoknottobeokrow.jpg" alt="">
-                        <a href="#itsoknottobeokDialog"> <button class="selectButton">Watch</button></a>
-                    </div>
-
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/kingdomrow.jpg" alt="">
-                        <a href="#kingdomDialog"> <button class="selectButton">Watch</button></a>
-                    </div>
-
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/aotrow.jpg" alt="">
-                        <a href="#aotDialog"> <button class="selectButton">Watch</button></a>
-                    </div>
-
-                    <div class="contentCard">
-                        <img class="shows" src="../assets/ShowRow/bokunoherorow.jpg" alt="">
-                        <a href="#bokunoheroDialog"> <button class="selectButton">Watch</button></a>
-
-                    </div>
-                </div>
-
-                <div class="newContainer" id="newRows">
-
-                    <h1 class="NewHeader">Latest Additions</h1>
-
-                    <div class="newRow">
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/Kung_fu_panda_poster1.jpg" alt="">
-                            <a href="#kungfupandaDialog"> <button class="selectButton">Watch</button></a>
-                        </div>
-
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/Kung_Fu_Panda_2_Poster.jpg" alt="">
-                            <a href="#kungfupanda2Dialog"> <button class="selectButton">Watch</button></a>
-                        </div>
-
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/duneposter.jpg" alt="">
-                            <a href="#dune1Dialog"> <button class="selectButton">Watch</button></a>
-                        </div>
-
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/horizondocuposter.jpg" alt="">
-                            <a href="#horizonDialog"> <button class="selectButton">Watch</button></a>
-                        </div>
-
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/badguysposter.jpg" alt="">
-                            <a href="#badguysDialog"> <button class="selectButton">Watch</button></a>
-                        </div>
-
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/mockingjay.jpg" alt="">
-                            <a href="#mockingjayDialog"> <button class="selectButton">Watch</button></a>
-                        </div>
-
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/twilightposter.jpg" alt="">
-                            <a href="#twilightDialog"> <button class="selectButton">Watch</button></a>
-                        </div>
-
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/dunkirk poster.jpg" alt="">
-                            <a href="#dunkirkDialog"> <button class="selectButton"> Watch</button></a>
-                        </div>
-
-                        <div class="contentCard">
-                            <img class="newContent" src="../assets/LatestRow/Frieren.jpg" alt="">
-                            <a href="#frierenDialog"> <button class="selectButton">Watch</button></a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="allquietwesternfrontDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#allquietinthewesternfrontPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#allquietinthewesternfrontWatch"> <button class="selectButton">Watch</button></a>
-                    <h5>Drama, Comedy,Action, Pyschology</h5>
-                    <h5>Cast: Fionn Whitehead, Tom Hardy, Mark Rylance</h5>
-                    <h5>Synopsis: Dunkirk depicts the harrowing evacuation
-                        of Allied soldiers from the beaches of Dunkirk during World War II, blending intense action
-                        sequences, stunning visuals, and multiple perspectives to create a visceral and immersive
-                        war epic.</h5>
-                </div>
-
-            </div>
-
-            <div id="allquietinthewesternfrontPreview" class="contentDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qFqgmaO15x4?si=SCJiaGugW5r8GiN9"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div id="allquietinthewesternfrontWatch" class="contentDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zKsSln9sFAA?si=ORb9uPoBBq3FVZl4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="traintobusanDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#traintobusanPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#traintoBusanWatch"> <button class="selectButton">Watch</button></a>
-                </div>
-
-            </div>
-
-            <div id="traintobusanPreview" class="contentDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1ovgxN2VWNc?si=BHZh5vK_kDN4pfQ2"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="traintoBusanWatch" class="contentDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UB6uMQ1xqoc?si=GQk5e6wPi4NthvPj"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div id="cektokosebelahDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#cektokosebelahPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#cektokosebelahWatch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="cektokosebelahPreview" class="contentDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N91IWvXcmK4?si=iDa8LgGkS_oSyEjL"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="cektokosebelahWatch" class="contentDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NpyU_ZcHGHQ?si=usB4tWscfcDlxzM7"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div id="violeteveragrdenDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#violetevergardenthemoviePreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#violetevergardenthemovie"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-
-            <div id="violetevergardenthemoviePreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/p8mJi2IhScY?si=4lNLQDivRR3AhjOY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="violetevergardenthemovie" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BMEwRSwFbwg?si=j0HEIC-MKIsYMohY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="missionimposbleDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#missionimpossibleroguePreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#missionimpossiblerogueWatch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="missionimpossibleroguePreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gOW_azQbOjw?si=GqHXcl4R5eCYvVZT"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>e>
-                </div>
-            </div>
-
-            <div id="missionimpossiblerogueWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c575plTsVn0?si=s6a4W29agc0oKeOJ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="topgunmaverickDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#topgunmaverickPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#topgunmaverickWatch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="topgunmaverickPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NSmkA7hcNjs?si=50US6Lp18Lm6JjLB"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="topgunmaverickWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nJwKAhgWHOc?si=0vKwpVIwmNNShGJ2"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div id="skiptraceDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#skiptracePreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#skiptraceWatch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="skiptracePreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tD4Bi24ZhhI?si=U6l2jeQY4Xi4ehoo"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="skiptraceWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CpgZJhW31H0?si=iu4kPObpxOeaMmw8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="walrusDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#walrusPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#walrusWatch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="walrusPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pDKNL9vwnUs?si=P7gKpc54CSoSeSKd"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="walrusWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t88vg7cJmRM?si=cockSusJE5bhjVYU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="businessproposalDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#businessproposalPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#businessproposalEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="businessproposalPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XRU1BtiulXw?si=UfBI_Yux-iwbuvXU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="businessproposalEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#businessproposalWatch"> <button class="selectButton"> Episode 12</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="businessproposalWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H8lfjfKGr00?si=2WIa0XjmaPNExVS-"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div id="hoteldelunaDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#hoteldellunaPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#hoteldellunaEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-
-            <div id="hoteldellunaPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zMWpcJ_n3_o?si=jS1gwm6yIROmv6Wm"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="hoteldellunaEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#hoteldellunaWatch"> <button class="selectButton"> Episode 12</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="hoteldellunaWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1i1xABoJGC0?si=i8cEsgK7pi5SvijH"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="chickennuggetDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#chickennuggetPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#chickennuggetEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="chickennuggetPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dhdg_pJOsV4?si=U7Uk9gvg8KRhf2P1"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div id="chickennuggetEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#chickennuggetWatch"> <button class="selectButton"> Episode 12</button></a>
+                    <div class="premiumColumn">
+                        <h4 class="pnpListHeader">Premium</h4>
+                        <h4 class="pnplistText">Rp 105.000</h4>
+                        <h4 class="pnplistText">Rp 756.000</h4>
+                        <h4 class="pnplistText">Yes</h4>
+                        <h4 class="pnplistText">Yes</h4>
+                        <h4 class="pnplistText">4</h4>
+                        <h4 class="pnplistText">6</h4>
+                        <h4 class="pnplistText">4k</h4>
+                        <h4 class="pnplistText">No</h4>
                     </div>
 
                 </div>
             </div>
 
-            <div id="chickennuggetWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mErKzxZorGs?si=wzZk-azZTEt9XO9v"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="compatibleDevicesContainer" id="compatibleStuff">
+                <div class="compatibleDevicesHeaderContainer">
+                    <h1>Compatible <strong>Devices</strong></h3>
+                        <h4>We support A Wide Variety Of Devices </h4>
+                        <h5>Devices we support are as shown</h5>
                 </div>
-            </div>
 
-            <div id="peakyblindersDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#peakyblindersPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#peakyblindersEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
+                <div class="compatibleDeviceListContainer">
+                    <div>
+                        <h2>Supported Screens</h2>
+                        <ol>
+                            <li>Mobile</li>
+                            <li>Laptop</li>
+                            <li>PC</li>
+                            <li>TV</li>
+                            <li>Tablet</li>
 
-            <div id="peakyblindersPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JwXfVGjSz-4?si=jCUR5B6T9MhkfFGp"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+                        </ol>
 
+                    </div>
 
-            <div id="peakyblindersEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#peakyblindersWatch"> <button class="selectButton"> Episode 12</button></a>
+                    <div class="compatibleDevicesNotes">
+                        <h2 class="CDULHeader">Notes</h2>
+                        <ul>
+                            <li>Simultaneous access across devices depends on the payment plan</li>
+                            <li>Quality will depend on payment plan</li>
+                            <li>Only works with SmartTV</li>
+                        </ul>
                     </div>
 
                 </div>
+
+                <div class="compatibleDeviceImgContainer">
+                    <img class="compatibleDeviceImg" src="../assets/homeAssets/compatibleDevices.png" alt="">
+                </div>
+
             </div>
 
-            <div id="peakyblindersWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M-7v9bP10-U?si=2otjamUQrr-DhucU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="familyAccountContainer"  id="familyAccount">
+                <div class="familyAccountTableHeaderContainer">
+                    <h1>Family Sha<strong>ring Account</strong>   </h1>
+                    <h2>We provide families with a way to ensure Simultaneous log ins throughout multiple devices</h2>
+                    <h3>That way with your family members can log in on each of their own devices at the same time</h3>
+                    <h4>And Use Our Platform Simultaneously</h4>
+
+                </div>
+
+                <div class="familyAccountImgContainer">
+                    <img class="familyAccountImgContainer" src="../assets/homeAssets/childprotection.png" alt="">
                 </div>
             </div>
 
-            <div id="boardwalkempireDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#boardwalkempirePreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#boardwalkempireEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
+            <div class="aboutUsContainer" id="about">
+                <h1>Abo<strong>ut Us</strong></h1>
+                <h2>We are a company with a mission to provide movies and tv shows at an affordable price to reduce
+                    piracy</h2>
+                <h3>And To Promote Local Indonesian Films</h3>
             </div>
 
-            <div id="boardwalkempirePreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qRpqQsdU-dg?si=7rutwG1t34N91dZM"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+            <div class="contactUsContainer" id="contact">
+                <h1>Click To <strong>Contact Us</strong>  </h1>
+                <div class="contactInfo">
+                    <div class="contactRow">
 
-            <div id="boardwalkempireEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#boardwalkempireWatch"> <button class="selectButton"> Episode 12</button></a>
+                        <a href=""><img class="contactImgGmail" src="../assets/homeAssets/gmailPng.png" alt=""></a>
+
+                        <a href=""><img class="contactImgWhatsApp" src="../assets/homeAssets/whatsApppng.png"
+                                alt=""></a>
+
+                        <a href=""><img class="contactImgInstagram" src="../assets/homeAssets/instagrampng.png"
+                                alt=""></a>
                     </div>
+
                 </div>
+
             </div>
 
-            <div id="boardwalkempireWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E6DfHOKsDY8?si=y0BaEKTCG6X1T4dU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="itsoknottobeokDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#itsoknottobeokPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#itsoknottobeokEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="itsoknottobeokPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1H__LNPCc80?si=gZMduWRbazkEX7XV"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+        </div>
 
 
-            <div id="itsoknottobeokEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#itsoknottobeokWatch"> <button class="selectButton"> Episode 12</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="itsoknottobeokWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/U7IYuaYP20U?si=Ubc0h0Rnniel7-Oy"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="kingdomDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#kingdomPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#kingdomEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="kingdomPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wdDKLeKiFaU?si=axUK72t48f9z-Dns"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="kingdomEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#kingdomWatch"> <button class="selectButton"> Episode 12</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="kingdomWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mLDSQUX4trg?si=e2mbAh0CduS9PkmE"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-
-            <div id="aotDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#attackOnTitanPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#attackOnTitanEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="attackOnTitanPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WpsxUR0CStw?si=ldQDpLiHIBOKEvpX"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="attackOnTitanEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#attackOnTitanWatch"> <button class="selectButton"> Episode 12</button></a>
-                    </div>
-                </div>
-            </div>
-        
-            <div id="attackOnTitanWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5YmJj0onPkI?si=UgeT32lyqvxqsJT1"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-
-            <div id="bokunoheroDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#bokuNoHeroPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#bokuNoHeroEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="bokuNoHeroPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WpsxUR0CStw?si=ldQDpLiHIBOKEvpX"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="bokuNoHeroEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#bokuNoHeroWatch"> <button class="selectButton"> Episode 12</button></a>
-                    </div>
-                 
-                </div>
-            </div>
-        
-            <div id="bokuNoHeroWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5YmJj0onPkI?si=UgeT32lyqvxqsJT1"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="kungfupandaDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#kungFuPanda1Preview"> <button class="selectButton">Preview</button></a>
-                    <a href="#kungFuPanda1Watch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="kungFuPanda1Preview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/STqJ_Up4iFg?si=a3OK8EgtWmSl7_nq"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="kungFuPanda1Watch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AhbCYVILusc?si=R7M5tpoOl13qnttW"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-
-            <div id="kungfupanda2Dialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#kungFuPanda2Preview"> <button class="selectButton">Preview</button></a>
-                    <a href="#kungFuPanda2Watch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="kungFuPanda2Preview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pxcI5g2iUCg?si=xPpS5hyfBN5kMdkD"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="kungFuPanda2Watch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hTpVCu5DzpA?si=yoXNrJ1bN4mnRLxN"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="dune1Dialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#dunePart1Preview"> <button class="selectButton">Preview</button></a>
-                    <a href="#dunePart1Watch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="dunePart1Preview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/{INSERT_VIDEO_ID}"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="dunePart1Watch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1_TuEO6Mttw?si=pUsnIUdWqgys7m8i"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="horizonDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#horizonDocumentaryPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#horizonDocumentaryWatch"> <button class="selectButton">Watch</button></a></iframe>
-                </div>
-            </div>
-
-            <div id="horizonDocumentaryPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xxibm1ODEpI?si=p3DGxpqw3Jx7e7Tg"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="horizonDocumentaryWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rkZ6gzyg7yY?si=F821ief8vtOB0LH0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="badguysDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#badGuysPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#badGuysWatch"> <button class="selectButton">Watch</button></a>n"
-                    allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="badGuysPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YDnJ7MQ5iLQ?si=qCOrsdWr_Cs6ZsE9"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="badGuysWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m8Xt0yXaDPU?si=lrimbRZFf-QZK0uX"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="mockingjayDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#mockingjay1Preview"> <button class="selectButton">Preview</button></a>
-                    <a href="#mockingjay1Watch"> <button
-                            class="selectButton">Watch</button></a>lowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="mockingjay1Preview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/k3JB1NX4A1g?si=QW2Xq3DbTlhQkadY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="mockingjay1Watch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X236AeHt5RY?si=flS-aOumQMNDJ7OK"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="twilightDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#twilightPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#twilightWatch"> <button class="selectButton">Watch</button></a> <button
-                        class="selectButton">Watch</button></a>origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="twilightPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QDRLSqm_WVg?si=nNeLWpmoTLZCHsrP"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="twilightWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qhDPJ7ozL6s?si=ndjgzY5qXG4tBd1o"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div id="dunkirkDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#dunkirkPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#dunkirkWatch"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="dunkirkPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F-eMt3SrfFU?si=3c2caP2NwqoDCKj7"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-        
-            <div id="dunkirkWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F-eMt3SrfFU?si=3c2caP2NwqoDCKj7"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            
-
-            <div id="frierenDialog" class="movieDialog">
-                <div>
-                    <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <a href="#frierenPreview"> <button class="selectButton">Preview</button></a>
-                    <a href="#frierenEpisode"> <button class="selectButton">Watch</button></a>
-                </div>
-            </div>
-
-            <div id="frierenPreview" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pqUZaKn7flw?si=IL7yb8VoJmrqj4xJ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        
-            <div id="frierenEpisode" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <h1 class="epHeader">Select Episode</h1>
-                    <div class="episode">
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 1</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 2</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 3</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 4</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 5</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 6</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 7</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 8</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 9</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 10</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 11</button></a>
-                        <a href="#frierenWatch"> <button class="selectButton"> Episode 12</button></a>
-                    </div>
-                 
-                </div>
-            </div>
-        
-            <div id="frierenWatch" class="contentDialog">
-                <div>
-                <a href="#movieRow" title="exit" class="exitDialog">Exit</a>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pqUZaKn7flw?si=IL7yb8VoJmrqj4xJ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <script src="../js/indexScroll.js"></script>
-            <script src="../js/bannerSwitch.js"></script>
+    </div>
 
 </body>
 
