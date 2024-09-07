@@ -92,9 +92,6 @@ document.getElementById('signUpForm').addEventListener('submit', (event) => {
     alert('Data Accepted Please Proceed To Payment')
 
 
-    //Styling
-    img.style.width = '20rem'
-    img.style.height = '20rem'
 
     // Get the element a
     let paymentQRHeading = document.querySelector('.signUpContainer .inputBox h3');
